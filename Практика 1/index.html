@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="utf-8"> <title>Задание 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <style>
+    </style>
+
+</head>
+
+<body>
+
+<form>
+    <div class="center">
+        <h2>Оставьте отзыв про нашу кофейню</h2>
+    </div>
+
+    Данный опрос поможет нам улучшить наш сервис
+    <div class="StandardForm">
+        <legend>О вас</legend>
+
+        <table class="maintable">
+            <tr>
+                <td class="Lefttable"><label>Имя</label></td><td class="Righttable"><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td class="Lefttable"><label>Телефон</label></td><td class="Righttable"><input type="text" name="phone" /></td>
+            </tr>
+            <tr>
+                <td class="Lefttable"><label>Email</label></td><td class="Righttable"><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td class="Lefttable"><label>Дата посещения</label></td><td class="Righttable"><input type="date" name="date" /></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <div class="StandardForm">
+        <legend>Персональная информация</legend>
+        <table class="maintable">
+            <tr>
+                <td class="Lefttable"><label>Возраст</label></td><td class="Righttable"><input type="number" min="1" max="100" step="1" name="age" /></td>
+            </tr>
+            <tr>
+                <td class="Lefttable"><label>Любимый кофе</label></td><td class="Righttable">
+                <select name="coffeeSelector">
+                    <option value="1">Американо</option>
+                    <option value="2">Капучино</option>
+                    <option value="3">Раф</option>
+                    <option value="4">Латте</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td class="Lefttable"><label>Как вы оцените качество кофе в нашей кофейне?</label></td><td class="Righttable"><textarea id="coffeeList" name="coffeeList"></textarea></td>
+			</tr>
+			<tr>
+				<td class="Lefttable"><label>Как вы оцените качество сервиса в нашей кофейне?</label></td><td class="Righttable"><textarea id="coffeeList" name="coffeeList"></textarea></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <div class="StandardForm">
+        <legend>Оценка кофейни</legend>
+        <label>Почему вы выбрали нашу кофейню?</label><br>
+        <input type="radio" name="radiochoise_type" value="1"/><label>Недалеко от дома/работы</label><br>
+        <input type="radio" name="radiochoise_type" value="2"/><label>Проходил мимо и зашел</label><br>
+        <input type="radio" name="radiochoise_type" value="3"/><label>Нашел в интернете</label><br>
+        <input type="radio" name="radiochoise_type" value="4"/><label>Порекомендовали</label><br>
+        <label>Вы будете рекомендовать нашу кофейню своим знакомым?</label><br>
+        <input type="radio" name="radiochoise_advice" value="true"/><label>Да</label><br>
+        <input type="radio" name="radiochoise_advice" value="false"/><label>Нет</label><br>
+    </div>
+    <br>
+    <input type="submit" value="Отправить" class="sendbutton">
+</form>
+<br>
+
+
+</body>
+
+</html>
